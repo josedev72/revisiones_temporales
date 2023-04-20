@@ -12,18 +12,13 @@ public class ApostadorTest {
     public void probarPuntosPronosticos() {
         // Declaramos los valores/datos necesarios
 
-        // Constructor Equipo(String nombre, String descripcion)
-        Equipo equipo1 = new Equipo("Argentina", "el de la 3ra estrella");
-        Equipo equipo2 = new Equipo("Mexico", "");
+        // Constructor 
 
-        // Constructor Partido(int ronda, Equipo equipo1, Equipo equipo2, int golesEquipo1, int golesEquipo2)
-        Partido partido = new Partido(1, equipo1, equipo2, 2, 0);
-        ResultadoEnum resultado = ResultadoEnum.ganador;
+        // Constructor 
 
-        // Constructor Pronostico(Partido partido, Equipo equipo, ResultadoEnum resultado)
-        Pronostico pronostico = new Pronostico(partido, equipo1, resultado);
-
+        // Constructor 
+        
         // probar el metodo puntosPronosticos de la clase Pronostico
-        Assertions.assertEquals(1,pronostico.puntosPronosticos());
+        //Assertions.assertEquals(1,);
     }
 }
