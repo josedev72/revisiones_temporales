@@ -1,8 +1,9 @@
 package com.proyecto.clasesTest;
 
 import com.proyecto.clases.*;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ApostadorTest {
     @Test
@@ -11,7 +12,7 @@ public class ApostadorTest {
         Apostador apostador = new Apostador("Maira");
 
         // Verificar Test
-        assertEquals(0,apostador.totalPuntos());
+        Assertions.assertEquals(0, apostador.totalPuntos());
     }
 
     @Test
@@ -28,7 +29,7 @@ public class ApostadorTest {
         Apostador apostador = new Apostador("José", new Pronostico[]{ pronostico });
 
         // Verificar Test del metodo totalPuntos()
-        assertEquals(1, apostador.totalPuntos());
+        Assertions.assertEquals(1, apostador.totalPuntos());
     }
 
     @Test
@@ -54,6 +55,6 @@ public class ApostadorTest {
         Apostador apostador = new Apostador("Laura", pronosticos);
 
         // Verificar Test del metodo totalPuntos()
-        assertEquals(1, apostador.totalPuntos());
+        Assertions.assertEquals(1, apostador.totalPuntos());
     }
 }
